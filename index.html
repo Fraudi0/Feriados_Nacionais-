@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriados Nacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Aluno(a): Bruno Bernardelli Fraudio -->
+    <main>
+        <h1>Feriados Nacionais</h1>
+        <p class="subtitulo">Digite um ano e veja todos os feriados nacionais do Brasil</p>
+
+        <div class="busca">
+            <input type="number" id="ano" placeholder="Ano">
+            <button id="btnConsultar">Consultar</button>
+        </div>
+
+        <div id="proximo"></div>
+
+        <p id="mensagem"></p>
+        <p id="total"></p>
+
+        <div class="legenda">
+            <span><i class="bolinha verde"></i> Dia de semana</span>
+            <span><i class="bolinha vermelha"></i> Sábado ou domingo</span>
+        </div>
+
+        <div class="tabela-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Dia da semana</th>
+                        <th>Feriado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaFeriados"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
